@@ -76,7 +76,7 @@ const ContactPage = () => {
       <section className="contact-form-section py-24 bg-black">
         <div className="container mx-auto px-5 md:px-10">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-16 items-start">
-            
+
             {/* Form Section */}
             <div className="lg:col-span-3">
               <h2 className="special-font font-zentry text-3xl font-black uppercase text-white md:text-4xl mb-8">
@@ -168,16 +168,16 @@ const ContactPage = () => {
 
             {/* Info Section */}
             <div className="lg:col-span-2 flex flex-col gap-12 lg:pl-10">
-              
+
               <div className="info-block-item">
                 <h4 className="font-general text-xs uppercase tracking-widest text-violet-300 mb-3">
                   Location
                 </h4>
                 <p className="font-circular-web text-lg text-white">
-                  Lagos, Nigeria
+                  Bayelsa, Nigeria
                 </p>
                 <p className="font-circular-web text-sm text-blue-50/50 mt-1">
-                  Broad Street, Lagos Island
+                  Bayelsa, Nigeria
                 </p>
               </div>
 
@@ -185,8 +185,8 @@ const ContactPage = () => {
                 <h4 className="font-general text-xs uppercase tracking-widest text-violet-300 mb-3">
                   General Inquiries
                 </h4>
-                <a href="mailto:hello@kanqistudios.com" className="font-circular-web text-lg text-white hover:text-violet-300 transition-colors">
-                  hello@kanqistudios.com
+                <a href="mailto:hello@kanqi.fun" className="font-circular-web text-lg text-white hover:text-violet-300 transition-colors">
+                  hello@kanqi.fun
                 </a>
               </div>
 

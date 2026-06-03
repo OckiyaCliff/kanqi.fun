@@ -15,7 +15,7 @@ const openRoles = [
     id: "role-1",
     title: "Lead Game Systems Designer",
     type: "Full-Time",
-    location: "Lagos, Nigeria / Hybrid",
+    location: "Bayelsa, Nigeria / Hybrid",
     description:
       "We are looking for an experienced Systems Designer to define core mechanics, player progression, and sandbox loops for our flagship project 'Incident of 95'. You will collaborate closely with artists and writers to translate cultural lore into interactive gameplay systems.",
   },
@@ -31,7 +31,7 @@ const openRoles = [
     id: "role-3",
     title: "Narrative Designer & Screenwriter",
     type: "Contract / Project-based",
-    location: "Lagos, Nigeria / Hybrid",
+    location: "Bayelsa, Nigeria / Hybrid",
     description:
       "Looking for a writer to expand the lore of our upcoming IPs, draft cinematic scripts, and write in-game dialogue. A deep understanding of West African myths, history, and contemporary culture is essential.",
   },

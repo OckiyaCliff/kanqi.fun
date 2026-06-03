@@ -16,36 +16,45 @@ const ipProjects = [
     id: "incident-of-95",
     title: "Incident of 95",
     logline:
-      "A supernatural thriller set in 1995 Lagos — where forgotten history refuses to stay buried.",
-    medium: ["Game", "Film"],
+      "Inspired by Nigerian urban legends, players investigate a suppressed supernatural incident in a boarding school in 1995.",
+    medium: ["Game"],
     status: "In Production",
     image: "/img/gallery-1.webp",
   },
   {
-    id: "unnamed-world-2",
-    title: "Project Ori",
+    id: "the-needful",
+    title: "The Needful",
     logline:
-      "An Afrofuturist odyssey through fractured timelines and ancestral memory.",
+      "During Nigeria’s economic collapse of the 1990s, a struggling taxi driver is forced to choose between moral integrity and saving his pregnant wife.",
     medium: ["Film"],
-    status: "Concept",
+    status: "In Production",
     image: "/img/gallery-2.webp",
   },
   {
-    id: "unnamed-world-3",
-    title: "The Crossing",
+    id: "omari-the-red-city",
+    title: "Omari: The Red City",
     logline:
-      "A coming-of-age story that unfolds across two continents and a hidden digital world.",
-    medium: ["Film", "Book"],
+      "A mythic, politically charged world centered around power, legacy, and survival in a brutal city-state.",
+    medium: ["Book", "Transmedia"],
     status: "Concept",
     image: "/img/gallery-3.webp",
   },
   {
-    id: "unnamed-world-4",
-    title: "Realm of Dust",
+    id: "the-last-room",
+    title: "The Last Room",
     logline:
-      "An open-world action RPG where myth and modernity collide in a post-colonial landscape.",
-    medium: ["Game"],
-    status: "Concept",
+      "A curated, rule-based AR puzzle experience turning any single room into an interactive escape room.",
+    medium: ["AR Game"],
+    status: "In Development",
+    image: "/img/gallery-4.webp",
+  },
+  {
+    id: "ar-table-tennis",
+    title: "AR Table Tennis",
+    logline:
+      "A physics-based augmented reality sports simulator bringing table tennis matches to any flat surface in your room.",
+    medium: ["AR Game"],
+    status: "In Development",
     image: "/img/gallery-5.webp",
   },
 ];
@@ -53,6 +62,7 @@ const ipProjects = [
 const statusColors = {
   Concept: "bg-yellow-300 text-black",
   "In Production": "bg-violet-300 text-white",
+  "In Development": "bg-blue-500 text-white",
   Released: "bg-green-500 text-white",
 };
 

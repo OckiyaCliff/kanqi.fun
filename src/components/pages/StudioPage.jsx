@@ -14,7 +14,7 @@ const milestones = [
     year: "2022",
     title: "Founding & Conception",
     description:
-      "kanQi Studios is established in Lagos, Nigeria by a collective of filmmakers, animators, and software developers, set on writing and building original African worlds.",
+      "kanQi Studios is established in Bayelsa, Nigeria by a collective of filmmakers, animators, and software developers, set on writing and building original African worlds.",
   },
   {
     year: "2023",

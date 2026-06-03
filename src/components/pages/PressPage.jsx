@@ -182,8 +182,8 @@ const PressPage = () => {
             />
             <p className="font-circular-web text-blue-50/70">
               For interview requests, review codes, or custom media packages, please get in touch using the form below or email us directly at{" "}
-              <a href="mailto:press@kanqistudios.com" className="text-violet-300 hover:underline">
-                press@kanqistudios.com
+              <a href="mailto:press@kanqi.fun" className="text-violet-300 hover:underline">
+                press@kanqi.fun
               </a>
               .
             </p>

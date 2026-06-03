@@ -15,10 +15,10 @@ const devlogs = [
   {
     id: "log-1",
     date: "June 2026",
-    title: "Reimagining 90s Lagos: Worldbuilding and Art Direction",
+    title: "Reimagining 90s: Worldbuilding and Art Direction",
     category: "Art / Dev",
     summary:
-      "A deep dive into our references, architecture research, and how we are using atmospheric lighting to capture the texture and mood of 1995 Lagos.",
+      "A deep dive into our references, architecture research, and how we are using atmospheric lighting to capture the texture and mood of 1995.",
   },
   {
     id: "log-2",
@@ -141,21 +141,21 @@ const GamesPage = () => {
           <div className="game-details-content grid grid-cols-1 gap-12 lg:grid-cols-3">
             <div className="lg:col-span-2">
               <h3 className="special-font font-zentry text-3xl font-black uppercase text-white md:text-5xl">
-                A Supernatural Thriller Set in 1995 Lagos
+                African Horror Rooted in Folklore
               </h3>
               <p className="mt-6 font-circular-web text-lg text-blue-50 opacity-60">
-                You play as a freelance journalist investigating the unexplained
-                disappearance of a close friend, leading you back to the old
-                districts of Lagos. What starts as a standard missing persons case
-                soon spirals into a nightmare of temporal anomalies, forgotten folklore,
-                and secrets that power-brokers would kill to keep hidden.
+                Inspired by Nigerian urban legends such as Lady Koi Koi, players investigate a
+                suppressed supernatural incident in a boarding school in 1995 involving
+                disappearances, violence, and a spirit the authorities deny ever existed. kanQi
+                Studios prioritizes psychological fear over cheap jump scares and delivers deep,
+                environmental storytelling.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <span className="rounded-md border border-white/20 px-4 py-2 font-general text-xs uppercase tracking-wider text-white/80">
-                  Genre: Psychological Horror / Investigation
+                  Genre: First-Person Survival Horror
                 </span>
                 <span className="rounded-md border border-white/20 px-4 py-2 font-general text-xs uppercase tracking-wider text-white/80">
-                  Platform: PC / Next-Gen Consoles
+                  Platform: PC (initial), Consoles Later
                 </span>
               </div>
             </div>

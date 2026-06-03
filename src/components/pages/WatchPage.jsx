@@ -13,31 +13,31 @@ gsap.registerPlugin(ScrollTrigger);
 const films = [
   {
     id: "film-1",
-    title: "The Weight of Light",
-    year: "2025",
-    runtime: "18 min",
-    type: "Short Film",
-    festivals: ["TIFF", "Durban IFF"],
-    thumbnail: "/img/gallery-4.webp",
+    title: "Incident of 95 Teaser",
+    year: "2026",
+    runtime: "2 min",
+    type: "Game Teaser",
+    festivals: ["Gamescom", "Lagos Games Festival"],
+    thumbnail: "/img/gallery-1.webp",
     video: "videos/feature-1.mp4",
   },
   {
     id: "film-2",
-    title: "Bridges",
-    year: "2024",
-    runtime: "12 min",
-    type: "Short Film",
-    festivals: ["AFRIFF", "Sundance Collab"],
+    title: "The Needful Trailer",
+    year: "2025",
+    runtime: "1 min",
+    type: "Animated Trailer",
+    festivals: ["Durban FilmMart"],
     thumbnail: "/img/gallery-2.webp",
     video: "videos/feature-2.mp4",
   },
   {
     id: "film-3",
-    title: "Dust & Signal",
-    year: "2024",
-    runtime: "22 min",
-    type: "Short Film",
-    festivals: ["Berlin Shorts", "Lagos Film Society"],
+    title: "Omari: The Red City Visualizer",
+    year: "2026",
+    runtime: "3 min",
+    type: "Concept Teaser",
+    festivals: ["Encounters Film Festival"],
     thumbnail: "/img/gallery-3.webp",
     video: "videos/feature-3.mp4",
   },
@@ -81,18 +81,19 @@ const FeaturedFilm = () => {
               Featured
             </span>
             <h2 className="special-font font-zentry text-4xl font-black uppercase text-white md:text-7xl">
-              The We<b>i</b>ght of L<b>i</b>ght
+              The Ne<b>e</b>dful
             </h2>
             <p className="mt-3 max-w-lg font-circular-web text-white/60">
-              A young woman in Lagos discovers that the memories she's been
-              running from hold the key to the future she can't imagine.
+              During Nigeria’s economic collapse of the 1990s, a struggling taxi driver is forced
+              to choose between moral integrity and saving his pregnant wife after a violent robbery
+              leaves him with stolen money and a dying woman.
             </p>
             <div className="mt-4 flex items-center gap-4 font-general text-[10px] uppercase text-white/50">
-              <span>2025</span>
+              <span>1997 Setting</span>
               <span className="h-1 w-1 rounded-full bg-white/50" />
-              <span>18 min</span>
+              <span>7 min</span>
               <span className="h-1 w-1 rounded-full bg-white/50" />
-              <span>Short Film</span>
+              <span>Animated Short Film</span>
             </div>
             <div className="mt-5">
               <Button
