@@ -103,11 +103,10 @@ const Features = () => (
     <div className="container mx-auto px-3 md:px-10">
       <div className="px-5 py-32">
         <p className="font-circular-web text-lg text-blue-50">
-          Our Creative Universe
+          Featured Work
         </p>
         <p className="max-w-md font-circular-web text-lg text-blue-50 opacity-50">
-          Step into a constellation of original worlds — each one a gateway
-          between film, games, and culture.
+          Our strongest projects currently in development.
         </p>
       </div>
 
@@ -116,55 +115,39 @@ const Features = () => (
           src="videos/feature-1.mp4"
           title={
             <>
-              studi<b>o</b>
+              The V<b>e</b>ssel
             </>
           }
-          description="The creative engine behind every kanQi world. From concept to screen, from code to controller."
-          isComingSoon
+          description="An action-adventure RPG combining exploration, combat, narrative and a distinctive world."
         />
       </BentoTilt>
 
-      <div className="grid h-[135vh] w-full grid-cols-2 grid-rows-3 gap-7">
-        <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
+      <div className="grid w-full grid-cols-1 md:grid-cols-2 gap-7">
+        <BentoTilt className="bento-tilt_1 h-96 md:h-[65vh]">
           <BentoCard
             src="videos/feature-2.mp4"
             title={
               <>
-                fil<b>m</b>s
+                Incid<b>e</b>nt of '95
               </>
             }
-            description="Cinematic stories rooted in African voice — built for global stages and festival screens."
-            isComingSoon
+            description="An animated production currently in development at KanQi Studios."
           />
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0">
+        <BentoTilt className="bento-tilt_1 h-96 md:h-[65vh]">
           <BentoCard
             src="videos/feature-3.mp4"
             title={
               <>
-                gam<b>e</b>s
+                The N<b>e</b>edful
               </>
             }
-            description="Interactive worlds where narrative meets play. Built with soul, designed for immersion."
-            isComingSoon
+            description="An animated project in the early stages of development."
           />
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
-          <BentoCard
-            src="videos/feature-4.mp4"
-            title={
-              <>
-                lor<b>e</b>
-              </>
-            }
-            description="Every IP carries a universe of myth, history, and lore waiting to be explored."
-            isComingSoon
-          />
-        </BentoTilt>
-
-        <BentoTilt className="bento-tilt_2">
+        <BentoTilt className="bento-tilt_2 h-96 md:h-[65vh]">
           <div className="flex size-full flex-col justify-between bg-violet-300 p-5">
             <h1 className="bento-title special-font max-w-64 text-black">
               M<b>o</b>re w<b>o</b>rlds s<b>o</b>on.
@@ -174,7 +157,7 @@ const Features = () => (
           </div>
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_2">
+        <BentoTilt className="bento-tilt_2 h-96 md:h-[65vh]">
           <video
             src="videos/feature-5.mp4"
             loop

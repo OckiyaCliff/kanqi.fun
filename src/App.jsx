@@ -5,12 +5,12 @@ import ScrollToTop from "./components/ScrollToTop";
 
 // Pages
 import HomePage from "./components/pages/HomePage";
-import ProjectsPage from "./components/pages/ProjectsPage";
-import WatchPage from "./components/pages/WatchPage";
-import GamesPage from "./components/pages/GamesPage";
-import CareersPage from "./components/pages/CareersPage";
-import StudioPage from "./components/pages/StudioPage";
-import PressPage from "./components/pages/PressPage";
+import AboutPage from "./components/pages/AboutPage";
+import ServicesPage from "./components/pages/ServicesPage";
+import WorkPage from "./components/pages/WorkPage";
+import TeamPage from "./components/pages/TeamPage";
+import MissionPage from "./components/pages/MissionPage";
+import EducationPage from "./components/pages/EducationPage";
 import ContactPage from "./components/pages/ContactPage";
 
 function App() {
@@ -21,12 +21,12 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="/watch" element={<WatchPage />} />
-          <Route path="/games" element={<GamesPage />} />
-          <Route path="/careers" element={<CareersPage />} />
-          <Route path="/studio" element={<StudioPage />} />
-          <Route path="/press" element={<PressPage />} />
+          <Route path="/work" element={<WorkPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/team" element={<TeamPage />} />
+          <Route path="/mission" element={<MissionPage />} />
+          <Route path="/education" element={<EducationPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
         <Footer />

@@ -2,6 +2,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 import { TiLocationArrow } from "react-icons/ti";
+import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 
 import Button from "./Button";
@@ -114,31 +115,42 @@ const Hero = () => {
         </div>
 
         <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75">
-          W<b>O</b>RLDS
+          STUDI<b>O</b>S
         </h1>
 
         <div className="absolute left-0 top-0 z-40 size-full">
           <div className="mt-24 px-5 sm:px-10">
             <h1 className="special-font hero-heading text-blue-100">
-              we cre<b>a</b>te
+              KAN<b>Q</b>I
             </h1>
 
             <p className="mb-5 max-w-64 font-robert-regular text-blue-100">
-              Stories that move you. <br /> Games that stay with you.
+              Stories that matter. <br /> Worlds worth experiencing.
             </p>
 
-            <Button
-              id="watch-trailer"
-              title="Watch our reel"
-              leftIcon={<TiLocationArrow />}
-              containerClass="bg-yellow-300 flex-center gap-1"
-            />
+            <div className="flex gap-4">
+              <Link to="/work">
+                <Button
+                  id="explore-work"
+                  title="Explore Our Work"
+                  leftIcon={<TiLocationArrow />}
+                  containerClass="bg-yellow-300 flex-center gap-1"
+                />
+              </Link>
+              <Link to="/contact">
+                <Button
+                  id="work-with-us"
+                  title="Work With Us"
+                  containerClass="border-hsla bg-white/5 flex-center gap-1"
+                />
+              </Link>
+            </div>
           </div>
         </div>
       </div>
 
       <h1 className="special-font hero-heading absolute bottom-5 right-5 text-black">
-        W<b>O</b>RLDS
+        STUDI<b>O</b>S
       </h1>
     </div>
   );

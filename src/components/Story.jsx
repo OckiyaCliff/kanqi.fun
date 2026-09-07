@@ -50,12 +50,12 @@ const FloatingImage = () => {
     <div id="story" className="min-h-dvh w-screen bg-black text-blue-50">
       <div className="flex size-full flex-col items-center py-10 pb-24">
         <p className="font-general text-sm uppercase md:text-[10px]">
-          the kanQi universe
+          the kanQi studio
         </p>
 
         <div className="relative size-full">
           <AnimatedTitle
-            title="the art <b>o</b>f <br /> building real<b>m</b>s"
+            title="&quot;the art <b>o</b>f <br /> telling st<b>o</b>ries&quot;"
             containerClass="mt-5 pointer-events-none mix-blend-difference relative z-10"
           />
 
@@ -107,14 +107,13 @@ const FloatingImage = () => {
         <div className="-mt-80 flex w-full justify-center md:-mt-64 md:me-44 md:justify-end">
           <div className="flex h-full w-fit flex-col items-center md:items-start">
             <p className="mt-3 max-w-sm text-center font-circular-web text-violet-50 md:text-start">
-              Where cinema and code converge, lies kanQi — a studio building
-              worlds that outlive their medium.
+              Where creativity meets purpose — a studio building original animation, games and stories that leave a lasting impression.
             </p>
 
-            <Link to="/projects">
+            <Link to="/work">
               <Button
                 id="realm-btn"
-                title="explore our worlds"
+                title="explore our work"
                 containerClass="mt-5"
               />
             </Link>

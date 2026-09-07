@@ -36,11 +36,11 @@ const Contact = () => {
 
         <div className="flex flex-col items-center text-center">
           <p className="mb-10 font-general text-[10px] uppercase">
-            Join kanQi
+            Let's Create
           </p>
 
           <AnimatedTitle
-            title="let&#39;s b<b>u</b>ild the <br /> next era of <br /> st<b>o</b>ries t<b>o</b>gether."
+            title="&quot;let&#39;s cre<b>a</b>te <br /> s<b>o</b>mething <br /> t<b>o</b>gether.&quot;"
             className="special-font !md:text-[6.2rem] w-full font-zentry !text-5xl !font-black !leading-[.9]"
           />
 

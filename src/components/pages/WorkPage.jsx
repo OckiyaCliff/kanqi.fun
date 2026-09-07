@@ -13,54 +13,38 @@ gsap.registerPlugin(ScrollTrigger);
 
 const ipProjects = [
   {
-    id: "incident-of-95",
-    title: "Incident of 95",
+    id: "the-vessel",
+    title: "The Vessel",
     logline:
-      "Inspired by Nigerian urban legends, players investigate a suppressed supernatural incident in a boarding school in 1995.",
+      "An action-adventure RPG combining exploration, combat, narrative and a distinctive world designed to deliver a memorable interactive experience.",
     medium: ["Game"],
-    status: "In Production",
+    status: "In Development",
     image: "/img/gallery-1.webp",
+    details:
+      "Role: Original IP / Game Development · Engine: Unreal Engine 5 · Stage: Vertical Slice Development",
+  },
+  {
+    id: "incident-of-95",
+    title: "Incident of '95",
+    logline:
+      "An animated production currently being developed by KanQi Studios.",
+    medium: ["Animation"],
+    status: "In Production",
+    image: "/img/gallery-2.webp",
   },
   {
     id: "the-needful",
     title: "The Needful",
     logline:
-      "During Nigeria’s economic collapse of the 1990s, a struggling taxi driver is forced to choose between moral integrity and saving his pregnant wife.",
-    medium: ["Film"],
-    status: "In Production",
-    image: "/img/gallery-2.webp",
-  },
-  {
-    id: "omari-the-red-city",
-    title: "Omari: The Red City",
-    logline:
-      "A mythic, politically charged world centered around power, legacy, and survival in a brutal city-state.",
-    medium: ["Book", "Transmedia"],
-    status: "Concept",
+      "An animated project in the early stages of development at KanQi Studios.",
+    medium: ["Animation"],
+    status: "Pre-Production",
     image: "/img/gallery-3.webp",
-  },
-  {
-    id: "the-last-room",
-    title: "The Last Room",
-    logline:
-      "A curated, rule-based AR puzzle experience turning any single room into an interactive escape room.",
-    medium: ["AR Game"],
-    status: "In Development",
-    image: "/img/gallery-4.webp",
-  },
-  {
-    id: "ar-table-tennis",
-    title: "AR Table Tennis",
-    logline:
-      "A physics-based augmented reality sports simulator bringing table tennis matches to any flat surface in your room.",
-    medium: ["AR Game"],
-    status: "In Development",
-    image: "/img/gallery-5.webp",
   },
 ];
 
 const statusColors = {
-  Concept: "bg-yellow-300 text-black",
+  "Pre-Production": "bg-yellow-300 text-black",
   "In Production": "bg-violet-300 text-white",
   "In Development": "bg-blue-500 text-white",
   Released: "bg-green-500 text-white",
@@ -117,7 +101,7 @@ const ProjectCard = ({ project, index }) => {
             </div>
           </div>
 
-          {/* Title + Logline */}
+          {/* Title + Logline + Details */}
           <div>
             <h2 className="special-font font-zentry text-3xl font-black uppercase text-white md:text-5xl">
               {project.title}
@@ -125,6 +109,11 @@ const ProjectCard = ({ project, index }) => {
             <p className="mt-2 max-w-md font-circular-web text-sm text-white/70 md:text-base">
               {project.logline}
             </p>
+            {project.details && (
+              <p className="mt-2 max-w-md font-general text-[10px] uppercase tracking-wider text-white/40">
+                {project.details}
+              </p>
+            )}
           </div>
         </div>
       </div>
@@ -132,21 +121,20 @@ const ProjectCard = ({ project, index }) => {
   );
 };
 
-const ProjectsPage = () => {
+const WorkPage = () => {
   return (
     <div className="min-h-screen w-screen bg-black">
       <PageHero
-        title="Our W<b>o</b>rlds"
-        subtitle="Original IPs"
+        title="Our W<b>o</b>rk"
+        subtitle="Portfolio"
         containerClass="min-h-[70vh]"
       />
 
       <section className="container mx-auto px-5 pb-32 md:px-10">
         <div className="mb-16 max-w-xl">
           <p className="font-circular-web text-lg text-blue-50 opacity-50">
-            Every project at kanQi begins as a world — with its own rules,
-            myths, and emotional gravity. These are the universes we are
-            building.
+            Every project at KanQi is built with purpose — combining
+            storytelling, design and technology to create meaningful experiences.
           </p>
         </div>
 
@@ -157,20 +145,33 @@ const ProjectsPage = () => {
         </div>
       </section>
 
+      {/* Client & Collaborative Work */}
+      <section className="container mx-auto px-5 pb-16 md:px-10">
+        <div className="mb-8">
+          <p className="font-general text-xs uppercase tracking-widest text-violet-300 mb-3">Client Work</p>
+          <h2 className="special-font font-zentry text-2xl font-black uppercase text-white md:text-4xl">Client & Collaborative Work</h2>
+        </div>
+        <div className="border-hsla rounded-md p-8 bg-[#0f0f11]">
+          <h3 className="font-circular-web text-lg text-white mb-2">Animation Project — United States</h3>
+          <p className="font-circular-web text-sm text-blue-50/60">Completed animation production for an independent international creator.</p>
+          <span className="mt-4 inline-block rounded-full bg-white/10 px-3 py-1 font-general text-[10px] uppercase text-white/50">Project completed. Publication pending.</span>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="flex flex-col items-center bg-black px-5 pb-32">
         <AnimatedTitle
-          title="every w<b>o</b>rld <br /> has a st<b>o</b>ry"
+          title="every pr<b>o</b>ject <br /> tells a st<b>o</b>ry"
           containerClass="mt-5 text-center"
         />
         <p className="mt-6 max-w-md text-center font-circular-web text-blue-50 opacity-50">
-          Want to collaborate on an IP? We're always looking for visionary
-          storytellers, designers, and engineers.
+          Interested in working with KanQi Studios? We're always open to new
+          collaborations.
         </p>
-        <Link to="/careers" className="mt-8">
+        <Link to="/contact" className="mt-8">
           <Button
             id="projects-cta"
-            title="Join the team"
+            title="Get in touch"
             containerClass="cursor-pointer"
           />
         </Link>
@@ -179,4 +180,4 @@ const ProjectsPage = () => {
   );
 };
 
-export default ProjectsPage;
+export default WorkPage;

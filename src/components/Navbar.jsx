@@ -8,11 +8,11 @@ import { Link, useLocation } from "react-router-dom";
 import Button from "./Button";
 
 const navItems = [
-  { label: "Projects", path: "/projects" },
-  { label: "Watch", path: "/watch" },
-  { label: "Games", path: "/games" },
-  { label: "Careers", path: "/careers" },
-  { label: "Studio", path: "/studio" },
+  { label: "Work", path: "/work" },
+  { label: "About", path: "/about" },
+  { label: "Services", path: "/services" },
+  { label: "Team", path: "/team" },
+  { label: "Contact", path: "/contact" },
 ];
 
 const NavBar = () => {
@@ -123,10 +123,10 @@ const NavBar = () => {
                 />
               </Link>
 
-              <Link to="/projects">
+              <Link to="/work">
                 <Button
                   id="product-button"
-                  title="Projects"
+                  title="Our Work"
                   rightIcon={<TiLocationArrow />}
                   containerClass="bg-blue-50 md:flex hidden items-center justify-center gap-1"
                 />
@@ -219,18 +219,6 @@ const NavBar = () => {
               {item.label}
             </Link>
           ))}
-          <Link
-            to="/press"
-            className="mobile-nav-item special-font font-zentry text-4xl font-black uppercase text-blue-50 transition-colors hover:text-violet-300"
-          >
-            Press
-          </Link>
-          <Link
-            to="/contact"
-            className="mobile-nav-item special-font font-zentry text-4xl font-black uppercase text-blue-50 transition-colors hover:text-violet-300"
-          >
-            Contact
-          </Link>
         </div>
       </div>
     </>

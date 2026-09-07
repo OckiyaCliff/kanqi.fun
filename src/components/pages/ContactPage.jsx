@@ -13,9 +13,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 const inquiryTypes = [
   { id: "general", label: "General" },
-  { id: "business", label: "Business / Partnerships" },
-  { id: "press", label: "Press" },
-  { id: "talent", label: "Talent / Careers" },
+  { id: "creators", label: "For Creators" },
+  { id: "studios", label: "For Studios & Organisations" },
+  { id: "investors", label: "For Investors & Publishers" },
+  { id: "talent", label: "For Talent" },
 ];
 
 const ContactPage = () => {
@@ -68,8 +69,8 @@ const ContactPage = () => {
   return (
     <div ref={containerRef} className="min-h-screen w-screen bg-black text-blue-50">
       <PageHero
-        title="Get in T<b>o</b>uch"
-        subtitle="Contact Us"
+        title="Let's Cre<b>a</b>te"
+        subtitle="Get in Touch"
         containerClass="min-h-[60vh]"
       />
 
@@ -80,7 +81,7 @@ const ContactPage = () => {
             {/* Form Section */}
             <div className="lg:col-span-3">
               <h2 className="special-font font-zentry text-3xl font-black uppercase text-white md:text-4xl mb-8">
-                Drop us a line
+                Let's Create Something.
               </h2>
 
               {/* Inquiry Type Selectors */}
@@ -174,10 +175,7 @@ const ContactPage = () => {
                   Location
                 </h4>
                 <p className="font-circular-web text-lg text-white">
-                  Bayelsa, Nigeria
-                </p>
-                <p className="font-circular-web text-sm text-blue-50/50 mt-1">
-                  Bayelsa, Nigeria
+                  Nigeria
                 </p>
               </div>
 
@@ -195,23 +193,58 @@ const ContactPage = () => {
                   Socials
                 </h4>
                 <div className="flex flex-col gap-2 font-circular-web text-sm">
+                  <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="text-blue-50/70 hover:text-violet-300 transition-colors">
+                    LinkedIn
+                  </a>
+                  <a href="https://instagram.com" target="_blank" rel="noreferrer" className="text-blue-50/70 hover:text-violet-300 transition-colors">
+                    Instagram
+                  </a>
                   <a href="https://twitter.com" target="_blank" rel="noreferrer" className="text-blue-50/70 hover:text-violet-300 transition-colors">
                     Twitter / X
                   </a>
                   <a href="https://youtube.com" target="_blank" rel="noreferrer" className="text-blue-50/70 hover:text-violet-300 transition-colors">
                     YouTube
                   </a>
-                  <a href="https://discord.com" target="_blank" rel="noreferrer" className="text-blue-50/70 hover:text-violet-300 transition-colors">
-                    Discord
-                  </a>
-                  <a href="https://medium.com" target="_blank" rel="noreferrer" className="text-blue-50/70 hover:text-violet-300 transition-colors">
-                    Medium
-                  </a>
                 </div>
+              </div>
+
+              <div className="info-block-item">
+                <h4 className="font-general text-xs uppercase tracking-widest text-violet-300 mb-3">
+                  Website
+                </h4>
+                <a href="https://kanqi.fun" className="font-circular-web text-lg text-white hover:text-violet-300 transition-colors">
+                  kanqi.fun
+                </a>
               </div>
 
             </div>
 
+          </div>
+        </div>
+      </section>
+
+      {/* Work With Us Section */}
+      <section className="py-32 bg-[#0f0f11] border-t border-white/5">
+        <div className="container mx-auto px-5 md:px-10">
+          <div className="text-center mb-16">
+            <p className="font-general text-xs uppercase tracking-widest text-violet-300 mb-3">Collaborate</p>
+            <h2 className="special-font font-zentry text-3xl font-black uppercase text-white md:text-5xl">Work With Us</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {[
+              { title: "For Creators", desc: "Have a story, animation or game you'd like to develop?" },
+              { title: "For Studios & Organisations", desc: "Looking for production or creative partners?" },
+              { title: "For Investors & Publishers", desc: "Interested in our original projects and long-term vision?" },
+              { title: "For Talent", desc: "Want to work with a growing African creative studio?" },
+            ].map((item, idx) => (
+              <div key={idx} className="border-hsla rounded-md p-8 bg-black hover:border-violet-300/40 transition-colors">
+                <h3 className="special-font font-zentry text-xl font-black uppercase text-white mb-3">{item.title}</h3>
+                <p className="font-circular-web text-sm text-blue-50/60 leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-12">
+            <a href="mailto:hello@kanqi.fun" className="font-circular-web text-lg text-violet-300 hover:text-yellow-300 transition-colors">hello@kanqi.fun</a>
           </div>
         </div>
       </section>

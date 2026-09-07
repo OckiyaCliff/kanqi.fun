@@ -30,19 +30,18 @@ const About = () => {
     <div id="about" className="min-h-screen w-screen">
       <div className="relative mb-8 mt-36 flex flex-col items-center gap-5">
         <p className="font-general text-sm uppercase md:text-[10px]">
-          Welcome to kanQi
+          About KanQi
         </p>
 
         <AnimatedTitle
-          title="Where st<b>o</b>ries become <br /> worlds you c<b>a</b>n inhabit"
+          title="&quot;We are st<b>o</b>rytellers, <br /> creat<b>o</b>rs and builders&quot;"
           containerClass="mt-5 !text-black text-center"
         />
 
         <div className="about-subtext">
-          <p>A studio born from African imagination — building films, games, and universes that resonate globally.</p>
+          <p>A Nigerian creative studio developing animation, games and original stories designed to leave a lasting impression.</p>
           <p className="text-gray-500">
-            kanQi Studios blends cinematic storytelling with interactive worlds,
-            creating IPs that live across every medium.
+            Founded in 2022, KanQi Studios creates meaningful stories and experiences while collaborating with creators, studios and organisations worldwide.
           </p>
         </div>
       </div>
